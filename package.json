@@ -1,6 +1,5 @@
 {
   "name": "refly-lib",
-  "private": true,
   "engines": {
     "pnpm": ">=8"
   },
