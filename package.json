@@ -1,0 +1,38 @@
+{
+  "name": "refly-lib",
+  "private": true,
+  "engines": {
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "commit": "cz",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "lint:ci": "turbo run lint:ci",
+    "lint": "turbo run lint",
+    "test": "pnpm -r --if-present test",
+    "test:unit": "pnpm -r --if-present test:unit",
+    "test:integration": "pnpm -r --if-present test:integration",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@changesets/cli": "^2.27.8",
+    "@types/node": "20.14.8",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "rimraf": "^5.0.10",
+    "turbo": "^2.1.2",
+    "typescript": "5.3.3",
+    "vitest": "^2.1.0"
+  },
+  "packageManager": "pnpm@8.15.8",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
